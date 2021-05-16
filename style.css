@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url(/assets/header-image.jpg);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+header nav p{
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background-color: #f58f29;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.pacotes {
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes #pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 24px 0px;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: #f58f29;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    background-color: #3423a6;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0px 0px 0px;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content ul li{
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: grey;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    flex-wrap: wrap;
+
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #f58f29;
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    font-size: .8rem;
+    text-align: center;
+    color: grey;
+}
+
+.servicos-cards .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+
+/* RESPONSIVIDADE */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px){
+
+    /* para o menu não ocupar conteudo do body */
+    body {
+        margin-bottom: 55px;
+    }
+
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 100;
+
+        height: 55px;
+        background-color: #f58f29;
+        color: white;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Portrait tablet to landscape and desktop*/
+@media (min-width: 768px) and (max-width: 979px){
+    
+}
+
+/* Large desktop */
+@media (min-width: 1200px){
+
+}
