@@ -11,7 +11,7 @@ body {
 
 header {
     height: calc(100vh - 150px);
-    background: no-repeat center/cover url(/assets/header-image.jpg);
+    background: no-repeat center/cover url(./assets/header-image.jpg);
 }
 
 header nav {
